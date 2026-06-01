@@ -10,6 +10,8 @@ confidence: high
 
 # Agent 卖萌与执行边界
 
+关联页面：[[agent-persona-failure-modes]]（人格失控链条）、[[agent-drift-patterns]]（漂移模式）
+
 ## 核心定义
 
 **双层人格模型**：把 agent 切成决策层（内核）和表达层（外壳）。
@@ -47,3 +49,8 @@ confidence: high
 ## 相关概念
 
 - [[karpathy-coding-guidelines]] — 同样涉及 agent 行为准则，两者都强调"执行优先"
+
+## Related
+<!-- openclaw:wiki:related:start -->
+- No related pages yet.
+<!-- openclaw:wiki:related:end -->

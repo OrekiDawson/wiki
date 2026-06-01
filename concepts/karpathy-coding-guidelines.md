@@ -70,3 +70,8 @@ Karpathy 观察到的 LLM 编码陷阱：
 ## 相关页面
 - [[agent-persona-vs-execution]] — 对比：Karpathy 强调"冷酷执行"，而人格失控恰是执行层被人格层吞掉；两者互补
 - [[agent-persona-failure-modes]] — 将 Karpathy 的执行准则与 reward hijack、谄媚失效链一起串联分析
+
+## Related
+<!-- openclaw:wiki:related:start -->
+- No related pages yet.
+<!-- openclaw:wiki:related:end -->

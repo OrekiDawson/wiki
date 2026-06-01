@@ -61,3 +61,8 @@ Helpfulness → Agreeableness → Validation → Sycophancy
 | 结果 | 执行退化 | 安全事故 |
 
 两者共同指向：**人格层失控会从内部破坏决策可靠性**。
+
+## Related
+<!-- openclaw:wiki:related:start -->
+- No related pages yet.
+<!-- openclaw:wiki:related:end -->

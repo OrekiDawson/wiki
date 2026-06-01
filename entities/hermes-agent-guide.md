@@ -145,3 +145,8 @@ terminal: local
 - 2026年4月起 Anthropic 封禁第三方工具通过 Claude 订阅访问，建议用 OpenRouter 或 Nous Portal
 - 记忆污染：早期写入的错误信息会持续影响，需定期审查 `~/.hermes/skills/`
 - Skill 冲突：触发条件重叠时行为可能异常，遇到先查 Skill 列表
+
+## Related
+<!-- openclaw:wiki:related:start -->
+- No related pages yet.
+<!-- openclaw:wiki:related:end -->

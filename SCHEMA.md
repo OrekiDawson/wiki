@@ -48,6 +48,20 @@ confidence: high | medium | low
 - `gpu` — GPU/CUDA
 - `tool` — 工具/软件
 
+### Agent & 治理
+- `agent-policy` — AI Agent 政策法规
+- `aip` — 智能体互联协议
+- `ai-governance` — AI 治理/监管
+- `agent-standards` — Agent 标准协议（MCP/A2A/AIP）
+- `compliance` — 合规与安全
+
+### Agent & AI
+- `alignment` — AI 对齐 / 安全
+- `hermes` — Hermes Agent 相关
+- `agent` — Agent 架构 / 行为
+- `skill` — Skill 系统
+- `memory` — 记忆系统
+
 ### 人物 & 组织
 - `person` — 人物
 - `lab` — 研究机构
