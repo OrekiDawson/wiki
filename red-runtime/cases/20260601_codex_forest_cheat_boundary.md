@@ -1,3 +1,16 @@
+---
+title: 2026-06-01 Codex 常青森林作弊边界案例
+created: 2026-06-01
+updated: 2026-06-01
+type: report
+tags: [pokemon, red-runtime, codex, cheat-boundary, tainted-state]
+sources: []
+confidence: high
+related:
+- "[[memory-context-dual-channel-confusion-2026-06-01]]"
+- "[[hermes-memory-injection-channels]]"
+---
+
 # 2026-06-01 Codex 常青森林作弊边界案例
 
 ## 事件摘要
@@ -182,4 +195,8 @@ git status --short
 
 只 add 新增/修改的 llmwiki 文件，不要顺手提交 runtime dirty。
 
-commit message: `docs: record codex forest cheat boundary case`
+- commit message: `docs: record codex forest cheat boundary case`
+
+## 相关页面
+- [[memory-context-dual-channel-confusion-2026-06-01]] — 同期 memory-context 边界案例
+- [[hermes-memory-injection-channels]] — Memory 注入双通道机制

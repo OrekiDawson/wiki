@@ -41,6 +41,7 @@ confidence: high
 5. **被引用内容的特征**（如果是新增概念名 / 新版本号 / 新事实 → 优先查 honcho）
 
 ## 相关页面
-- [[reports/memory-context-dual-channel-confusion-2026-06-01]] — 双通道混淆案例（2026-06-01 在吗事故）
+- [[memory-context-dual-channel-confusion-2026-06-01]] — 双通道混淆案例（2026-06-01 在吗事故）
+- [[20260601_codex_forest_cheat_boundary]] — Red runtime：Codex 作弊边界，tainted_debug_candidate 降级
 - [[hermes-agent-skills-cron-memory-2026]] — Hermes 三大核心能力总览
 - [[agent-drift-patterns]] — 漂移模式，含"输入源误识别"

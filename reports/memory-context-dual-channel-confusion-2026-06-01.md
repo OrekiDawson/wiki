@@ -89,7 +89,7 @@ verify:
 - [ ] 收口之前，rule_delta **不** 写入全局 honcho 长期规则
 
 ## 相关页面
-- [[concepts/hermes-memory-injection-channels]] — 双通道机制详细说明
+- [[hermes-memory-injection-channels]] — 双通道机制详细说明
 - [[hermes-agent-skills-cron-memory-2026]] — Hermes 三大能力总览
 - [[agent-drift-patterns]] — Agent 漂移模式
-- [[reports/open-questions]] — 其它未闭环的开放问题
+- [[open-questions]] — 其它未闭环的开放问题（OpenClaw 自动维护）

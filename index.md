@@ -39,6 +39,10 @@
 
 ## Reports（事件 / 案例 / 审计）
 - [[memory-context-dual-channel-confusion-2026-06-01]] — 2026-06-01 双通道混淆案例：frozen snapshot 与 honcho volatile 无差别混读，含 timeline_gap
+- [[wiki-lint-pass-2026-06-01]] — 2026-06-01 wiki 整理报告：lint pass + gap 透明化（含 OpenClaw schema 冲突 gap）
+
+## Red Runtime Cases（Red runtime 边界事件）
+- [[20260601_codex_forest_cheat_boundary]] — 2026-06-01 Codex 常青森林作弊边界：Pewter state 降级为 tainted_debug_candidate
 
 ## Generated
 <!-- openclaw:wiki:index:start -->

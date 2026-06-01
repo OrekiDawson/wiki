@@ -115,3 +115,21 @@
 - **rule_delta 候选**：先区分两个通道再归因；不立即写入全局 honcho 长期规则
 - **保留**：`honcho_memory_boundary_rule`（Oreki 立的硬规则）不删
 - **更新**：index.md（+1 页，27 → 28；新增 Reports 分区）
+
+## [2026-06-01] lint | wiki 整理 pass
+- **类型**：lint（结构审计 + 局部修复）
+- **变动**：
+  - 修 5 个 broken wikilink（带路径前缀 → basename 形式）：hermes-memory-injection-channels ↔ memory-context-dual-channel-confusion 互引、soul-md-original-article、agent-policy-2026、moltbook-hot-100-2026
+  - 修 2 个 broken wikilink（指向 wiki 外）：soul-md-design 删 runtime-kernel/agents-md-governance 改 agent-persona-vs-execution；moltbook-hot-100-raw 改成纯文本说明
+  - 补 frontmatter 必填字段 6 个 page：yaoyao-kiddie-ride、hermes-agent-skills-cron-memory-2026、github-http2-interference-2026-05-04、agent-policy-20260508、soul-md-deep-dive-2026-full、soul-md-deep-dive-2026
+  - red-runtime/cases/20260601_codex_forest_cheat_boundary.md 加 frontmatter + 双向 inbound link
+  - main index.md 新增 Red Runtime Cases 分区，+1 page（27 → 28）
+  - lint 脚本（/tmp/wiki_lint.py）新增：跳过 inline code 字面量、识别 OpenClaw reports schema
+- **没做**：
+  - 不 bump 6 个 stale page 的 updated/updatedAt（伪造 freshness，违反纪律）
+  - 不补 OpenClaw reports/* 的 wiki-style frontmatter（plugin 自己的 schema）
+  - 不拆 7 个 > 200 行 page（拆分需重复或并行主题，强行拆稀释可读性）
+  - 不修 OpenClaw schema 冲突（plugin 集成层，需 Oreki 决策）
+- **新报告**：reports/wiki-lint-pass-2026-06-01.md
+- **状态**：lint pass 完成，0 broken wikilink，orphan 13 个（9 reports + 4 raw，按约定不进 main index）
+- **更新**：index.md（+1 页 28 → 29；Reports 段 +1 案例）
