@@ -133,3 +133,59 @@
 - **新报告**：reports/wiki-lint-pass-2026-06-01.md
 - **状态**：lint pass 完成，0 broken wikilink，orphan 13 个（9 reports + 4 raw，按约定不进 main index）
 - **更新**：index.md（+1 页 28 → 29；Reports 段 +1 案例）
+
+## [2026-06-04] create | 小呦 52K 字符失控 response 案例
+- **类型**：create（事件案例 + raw 副本归档）
+- **触发**：Oreki 6/4 22:49 提到 "MiniMax Code 读取数据库发现一条超过 50000 字符的 response"（6/3 08:20）
+- **发现方式**：Codex 校准未挑出，MiniMax Code 直读 db 找出
+- **创建**：reports/xiaoyou-leaked-response-52k-2026-06-03.md
+- **同步归档**：~/.hermes/evidence/20260604_230334_xiaoyou-leaked-52k/{raw_response.md, analysis.md}
+- **raw sha256**：25c13608311829dca924617dc55ec31c372147d3c02d14bd7a1a708709d40db6
+- **7 类泄漏自检**：L1 主导 / L2 高频 / L3 中量 / L4 主导 / L5=0 / L6=0 / L7 高频
+- **risk_level**：中（db 污染 + session context 复用风险，platform_message_id=None 未发出）
+- **关联**：xiaoyou-thinking-leak-guard（SKILL.md 例 1 原始样本）、memory-context-dual-channel-confusion-2026-06-01（同类 agent 事故）
+- **未做**：不动 SOUL/AGENTS/SKILL；不删 raw；不 commit
+- **更新**：index.md（+1 页，28 → 29；Reports 段 +1 案例）
+
+## [2026-06-29] ingest | F3 猫面部费洛蒙完整研究
+- 来源：5 篇核心论文 + Wikipedia/PetMD/Ceva Connect 背景
+  - Vitale 2018 J Feline Med Surg（PMC11343345）综述
+  - Crump 2023 Veterinary Evidence 系统综述（VE-669）
+  - PLOS One 2023 Feliway Classic 抓挠 RCT（PMC10584138）
+  - Endersby 2024 Frontiers Vet Sci Optimum 项圈 RCT（PMC11694449）
+  - Wikipedia Cat pheromone + PetMD + Ceva Connect（VNO 路径）
+- 创建 raw 源（5 个）：
+  - raw/articles/f3-pheromone-vitale-2018-pmc11343345.md
+  - raw/articles/f3-acute-stress-crump-2023-ve-669.md
+  - raw/articles/feliway-classic-scratching-plos-2023.md
+  - raw/articles/feliway-optimum-collar-endersby-2024.md
+  - raw/articles/cat-pheromone-vno-pathway.md
+- 创建概念页（4 个）：
+  - concepts/f3-pheromone.md — 总览
+  - concepts/f3-clinical-evidence.md — 证据强度总表
+  - concepts/f3-product-map.md — Feliway + 国产替代
+  - concepts/vomeronasal-organ-pheromone-pathway.md — VNO 大脑路径
+- 创建实体页（4 个）：
+  - entities/ceva-sante-animale.md — 制造商
+  - entities/feliway-classic.md — F3 商业版
+  - entities/feliway-friends.md — FAP 商业版
+  - entities/feliway-optimum.md — FPhC 商业版
+- 创建对比页（1 个）：
+  - comparisons/f3-vs-fap-vs-optimum.md — 三方对比 + 决策表
+- 删除错放位置：/home/oreki/.hermes/wiki/f3-pheromone-deep-research.md
+- 更新：index.md（Total pages 29 → 38，加 9 个新条目）
+- 关联：小桔宝（公猫、田园橘白、18 天）当前使用 Feliway Classic 24h 散，此研究给小桔宝安全感地图打底
+
+---
+
+## 2026-06-30 — F3 拓展入库（按场景 + 小桔宝方案 + 4 篇新 raw）
+
+- 触发：Oreki 让"全研究"重说一次，先看 wiki 现状，发现 6/29 已建 4 概念 + 4 实体 + 1 对比。这次补 3 个方向：
+  1. **补 raw 源（4 篇）** — Mills 2001 Vet Record（喷尿 RCT）/ Gunn-Moore 2004 JFMS（FIC 试点 RCT）/ Ceva 1996 专利 US5709863A（配方比例一手来源）/ Pageat & Gaultier 2003 综述
+  2. **拓 comparison（1 篇）** — `comparisons/f3-by-scenario.md` 按"喷尿/抓挠/急性应激/适应/多猫/慢性焦虑"6 大场景拆开 + 决策表
+  3. **补 query（1 篇，queries/ 第一页）** — `queries/f3-for-xiaojubao.md` 给小桔宝 24h 散 + 7/12 换瓶 + 海乐妙/智能厕所 F3 喷雾用法 + 7/14/30 天验收标准
+- 引用纪律：所有 raw / concept / comparison / query 互链都过 wikilink；新概念 + 决策表 2+ 出站链接；`Feliway Optimum` 全表标"⚠️ 单成分效力不如专用"防止误用
+- index.md：加 Comparisons 第 5 条 + 新建 Queries section 1 条；Total 38 → 44（openclaw 自动块不手改）
+- 验证：6 个新页 frontmatter 完整、wikilink 至少 2 出站、不在 raw/ 下改文件
+- 没做：git commit（按 skill `xiaoyou-llm-wiki-usage` 反例 4，写完不自动 commit，等 Oreki 拍板）
+- 总文件改动：6 个新 wiki 页面 + 1 个 index.md 更新 + 1 个 log.md 追加
