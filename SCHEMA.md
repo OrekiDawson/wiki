@@ -67,6 +67,12 @@ confidence: high | medium | low
 - `lab` — 研究机构
 - `company` — 公司
 
+### 动画 & 声优
+- `anime` — 动画 / 漫画作品 / 角色
+- `voice-actor` — 声优 / 配音演员
+- `doraemon` — 哆啦A梦系列相关
+- `nobi-nobita` — 野比大雄相关
+
 ### 其他
 - `concept` — 通用概念
 - `comparison` — 对比分析

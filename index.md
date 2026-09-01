@@ -2,7 +2,7 @@
 
 > Oreki 的个人知识库目录。每个页面一行：链接 + 一句话摘要。
 > 读这里来快速定位内容。
-> Last updated: 2026-06-30 | Total pages: 44 |
+> Last updated: 2026-09-01 | Total pages: 46 |
 
 ## Entities（人物 / 工具 / 项目）
 - [[hermes-agent-guide]] — Hermes Agent 从入门到精通：三层记忆、Skill 系统、工具分类、MCP 集成（来源：橙皮书 by 花叔）
@@ -14,6 +14,7 @@
 - [[feliway-classic]] — Feliway Classic（F3 合成版扩散器），用于单猫喷尿/抓挠/新环境应激
 - [[feliway-friends]] — Feliway Friends（FAP 扩散器），用于多猫家庭减少冲突
 - [[feliway-optimum]] — Feliway Optimum（FPhC 专利配方，F3+FAP+新安抚信号），多问题同时适用
+- [[nobi-nobita]] — 野比大雄（哆啦A梦主角）：1973 TV 开播至今日本声优已换 3 代（太田淑子→小原乃梨子→大原惠）
 
 ## Concepts（概念 / 算法 / 技术）
 - [[agent-policy-2026]] — 《智能体规范应用与创新发展实施意见》（2026），中国首部AI Agent专项政策法规解读
@@ -36,6 +37,7 @@
 - [[f3-clinical-evidence]] — F3 临床证据强度总表：喷尿强 / 抓挠强 / 应激中等 / 慢性较弱
 - [[f3-product-map]] — F3 产品地图：Feliway 系列 + 国产替代（俏博士/京东京造）的对比
 - [[vomeronasal-organ-pheromone-pathway]] — 猫犁鼻器（VNO）与费洛蒙感知通路：flehmen 反应 + 人类闻不到的生物学原因
+- [[doraemon-voice-actors]] — 哆啦A梦系列日本声优换班（1973-2026）：3 代大雄声优时间线 + 2005 一齐换班背景 + 主要角色全表
 
 ## Comparisons（对比分析）
 - [[ai-agent-governance-eu-us-cn]] — EU AI Act vs 美国 EO vs 中国《智能体实施意见》：全球AI Agent治理三方对比

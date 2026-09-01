@@ -189,3 +189,54 @@
 - 验证：6 个新页 frontmatter 完整、wikilink 至少 2 出站、不在 raw/ 下改文件
 - 没做：git commit（按 skill `xiaoyou-llm-wiki-usage` 反例 4，写完不自动 commit，等 Oreki 拍板）
 - 总文件改动：6 个新 wiki 页面 + 1 个 index.md 更新 + 1 个 log.md 追加
+
+---
+
+## 2026-06-30 — 拓展研究 6 方向入库（untracked=0 配套）
+
+- 触发：Oreki 让"全部"，6 个方向：
+  1. 猫压力神经内分泌（HPA / 皮质醇 / GABA / 5-HT / 肠脑轴）
+  2. 猫音乐疗法（Teie 2015 + 慢速古典）
+  3. 小桔宝成长路标（AAFP 5 阶段 + 6 月龄绝育 — Oreki 校准）
+  4. 小桔宝家用品产品地图（Feliway / Petkit N60/N50 / 国产 / 处方 / 益生菌）
+  5. 精油 / 香薰 / 扩香在猫面前的安全性（ASPCA 缺 UGT 硬风险）
+  6. F3 vs α-酪蛋白 / L-茶氨酸 / BL999 / Calm 粮（横向对比）
+
+- 流程（**按 Oreki 6/30 校准（先查证证据，再统一写 wiki）**：
+  - 第一步：web search 抓一手资料（PMC10812130 AAFP 5 阶段 / PMC6178259 Rème 2018 L-茶氨酸 / Beata 2007 Zylkene / Beata 2016 Calm 粮 / Teie 2015 + LSU 2019 猫音乐 / ASPCA 精油清单 / Petkit 真实成分）
+  - 第二步：写 6 篇 raw 覆盖 6 方向（hpa-cortisol-gaba-5ht / cat-music-therapy-teie-classical / aafp-aaha-kitten-timeline / xiaojubao-product-map / essential-oils-toxic-to-cats-aspca / alpha-casozepine-l-theanine-probiotics-calm-diet）
+  - 第三步：写 4 篇 concept（cat-stress-hpa-cortisol / cat-music-therapy / cat-scent-safety / xiaojubao-product-map）
+  - 第四步：写 1 篇 comparison（f3-vs-probiotics-vs-amino-acids）
+  - 第五步：写 4 篇 query（xiaojubao-growth-timeline / xiaojubao-calming-extra / xiaojubao-scent-safety / xiaojubao-cat-toilet-safety）
+
+- 关键校准：
+  - 绝育：**6 月龄**（Oreki 立，**不**改 8 月龄；**不**用 AAFP 2020 政策 5 月的替代）
+  - Petkit N60/N50 = **除臭剂不是 F3 类费洛蒙** + **含柿果提取物（多酚）**，缺 UGT 风险
+  - 智能猫厕所**先关净味**
+
+- 姿势记录（cute-error-repair 配套）：
+  - 上一轮 5 篇未查证完整稿 → 移到 `_archive/drafts-2026-06-30/`，**不**进 wiki 主树
+  - 1 篇 raw 改 placeholder → 这一轮基于查证重写
+  - 整轮走 Oreki 6/30 校准的流程：**先 web search 抓硬数据 → 再写 wiki**，**不**凭印象编表格
+  - commit 配套 untracked=0 一起收
+
+- index.md：Total 44 → 56，Concepts 加 4 条，Comparisons 加 1 条，Queries 加 4 条
+- 验证：14 个新页 frontmatter 完整 / wikilink 至少 2 出站 / 没在 raw/ 下改文件
+- 没做：未自动 push；_archive/drafts-2026-06-30/ 4 篇未查证稿**保留**为"未查证历史稿"（**不**进 wiki 主树）
+- 总文件改动：14 个新 wiki 页面 + 1 个 index.md 更新 + 1 个 log.md 追加
+
+## [2026-09-01] ingest | 哆啦A梦系列日本声优换班
+- **触发**：Oreki 问 "哆啦A梦大雄的日本声优有没有变动过"
+- **来源**：
+  - 中文维基百科「野比大雄」：https://zh.wikipedia.org/wiki/%E9%87%8E%E6%AF%94%E5%A4%A7%E9%9B%84
+  - 日文维基百科「大山のぶ代」：https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E3%81%AE%E3%81%B6%E4%BB%A3
+  - エンタメクロス（ticket.co.jp）历代声优一览表：https://www.ticket.co.jp/entx/entertainment/doraemon-voice
+  - chinesedora.com 旧「大雄」认可水田山葵：https://chinesedra.com/news/4523.htm
+  - note.com/nao46222 2005 一齐换班背景：https://note.com/nao46222/n/naf60eb151084
+- **保存 raw**：raw/articles/doraemon-voice-actors-jp-2026.md
+- **创建 entity**：entities/nobi-nobita.md（野比大雄）
+- **创建 concept**：concepts/doraemon-voice-actors.md（系列声优换班总览）
+- **更新 SCHEMA.md**：新增"动画 & 声优"标签分类（anime / voice-actor / doraemon / nobi-nobita）
+- **更新 index.md**：Entities +1，Concepts +1，Total 44 → 46，Last updated 2026-06-30 → 2026-09-01
+- **没做**：未自动 commit（按 xiaoyou-llm-wiki-usage §停手条件 + cute-error-repair 配套，写完不自动 commit，等 Oreki 拍板）
+- **总文件改动**：1 raw + 1 entity + 1 concept + SCHEMA +1 段 + index.md + log.md
